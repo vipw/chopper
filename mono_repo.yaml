@@ -28,4 +28,5 @@ github:
 
 merge_stages:
 - analyzer_and_format
+- ensure_build
 - unit_test

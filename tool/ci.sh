@@ -74,6 +74,10 @@ for PKG in ${PKGS}; do
         echo 'pub run test -p chrome'
         pub run test -p chrome || EXIT_CODE=$?
         ;;
+      test_2)
+        echo 'pub run test --run-skipped -t presubmit-only test/ensure_build_test.dart'
+        pub run test --run-skipped -t presubmit-only test/ensure_build_test.dart || EXIT_CODE=$?
+        ;;
       *)
         echo -e "\033[31mUnknown TASK '${TASK}' - TERMINATING JOB\033[0m"
         exit 64

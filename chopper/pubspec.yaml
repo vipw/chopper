@@ -20,5 +20,6 @@ dev_dependencies:
   coverage: ^1.0.2
   http_parser: ^4.0.0
   pedantic: ^1.11.0
+  build_verify: ^2.0.0
   chopper_generator:
     path: ../chopper_generator
